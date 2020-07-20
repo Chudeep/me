@@ -1,0 +1,32 @@
+{
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.rulers": [80, 120],
+  "editor.multiCursorMergeOverlapping": false,
+  "workbench.iconTheme": "vs-nomo-dark",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "javascript.suggest.autoImports": false,
+  "flow.enabled": false,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "git.ignoreLimitWarning": true
+}
