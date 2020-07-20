@@ -10,6 +10,8 @@
     "flow:check": "flow check"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "mdi-material-ui": "^6.16.0",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"

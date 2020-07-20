@@ -1,8 +1,16 @@
+// @flow
+/* -----------------------  Globals ------------------ */
 import React from 'react';
 
+/* -----------------------  Material UI ------------------ */
+import Typography from '@material-ui/core/Typography';
+
+/* -----------------------  Components ------------------ */
 const Index = () => (
   <>
-    Portfolio website
+    <Typography variant="h1">
+      Portfolio website
+    </Typography>
   </>
 );
 
