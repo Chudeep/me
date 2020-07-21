@@ -48,11 +48,24 @@ type Props = {
   classes: Classes
 }
 
-const iconMap = {
-  linkedln: <Linkedin />,
-  twitter: <Twitter />,
-  github: <Github />,
-};
+const footerLinks = [
+  {
+    title: 'Linkedin',
+    icon: <Linkedin />,
+    url: 'https://www.linkedin.com/in/chudeep-shankar/',
+  },
+  {
+    title: 'Twitter',
+    icon: <Twitter />,
+    url: 'https://www.twitter.com/Chudeep/',
+  },
+  {
+    title: 'Github',
+    icon: <Github />,
+    url: 'https://www.github.com/Chudeep/',
+  },
+
+];
 
 /* -----------------------  Component ------------------ */
 const Footer = (props: Props) => {
@@ -73,10 +86,16 @@ const Footer = (props: Props) => {
         alignItems="flex-end"
       >
         <Box display="flex" flexDirection="row">
-          {['linkedln', 'twitter', 'github'].map((icon) => (
-            <a alt="icon" href="/" key={icon}>
+          {footerLinks.map(({ title, icon, url }) => (
+            <a
+              alt={`${title}-icon`}
+              href={url}
+              key={title}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Box mb={4} p={2} className={classes.icon}>
-                {iconMap[icon]}
+                {icon}
               </Box>
             </a>
           ))}
@@ -105,10 +124,16 @@ const Footer = (props: Props) => {
           >
             <Box display="flex" ml={8} flexDirection="column" alignItems="center" justifyContent="flex-end">
               <Box mb={4}>
-                {['linkedln', 'twitter', 'github'].map((icon) => (
-                  <a alt="icon" href="/" key={icon}>
+                {footerLinks.map((item) => (
+                  <a
+                    alt="icon"
+                    href={item.url}
+                    key={item.url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     <Box mb={1} className={classes.icon}>
-                      {iconMap[icon]}
+                      {item.icon}
                     </Box>
                   </a>
                 ))}
