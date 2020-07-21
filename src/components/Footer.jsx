@@ -88,7 +88,7 @@ const Footer = (props: Props) => {
         <Box display="flex" flexDirection="row">
           {footerLinks.map(({ title, icon, url }) => (
             <a
-              alt={`${title}-icon`}
+              alt={`${title}-link`}
               href={url}
               key={title}
               target="_blank"
@@ -124,16 +124,16 @@ const Footer = (props: Props) => {
           >
             <Box display="flex" ml={8} flexDirection="column" alignItems="center" justifyContent="flex-end">
               <Box mb={4}>
-                {footerLinks.map((item) => (
+                {footerLinks.map(({ title, icon, url }) => (
                   <a
-                    alt="icon"
-                    href={item.url}
-                    key={item.url}
+                    alt={`${title}-link`}
+                    href={url}
+                    key={title}
                     target="_blank"
                     rel="noreferrer noopener"
                   >
                     <Box mb={1} className={classes.icon}>
-                      {item.icon}
+                      {icon}
                     </Box>
                   </a>
                 ))}
