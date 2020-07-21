@@ -1,15 +1,26 @@
 /* eslint-disable react/jsx-props-no-spreading */
 // @flow
+/* -----------------------  Globals ------------------ */
 import React from 'react';
+
+/* -----------------------  Next ------------------ */
 import Head from 'next/head';
+
+/* -----------------------  Material UI ------------------ */
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from '../src/theme';
 
+/* -----------------------  Child Components ------------------ */
+import theme from '../src/theme';
+import './global-styles.css';
+
+/* -----------------------  Types ------------------ */
 type Props = {
   Component: *,
   pageProps: *,
 }
+
+/* -----------------------  Component ------------------ */
 export default function MyApp(props: Props) {
   const { Component, pageProps } = props;
 

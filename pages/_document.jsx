@@ -1,10 +1,19 @@
+// @flow
+/* -----------------------  Globals ------------------ */
 import React from 'react';
+
+/* -----------------------  Next ------------------ */
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
+
+/* -----------------------  Material UI ------------------ */
 import { ServerStyleSheets } from '@material-ui/core/styles';
+
+/* -----------------------  Theme ------------------ */
 import theme from '../src/theme';
 
+/* -----------------------  Component ------------------ */
 export default class MyPortfolio extends Document {
   render() {
     return (

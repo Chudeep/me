@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-Bold.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/fonts/TitilliumWeb-Bold.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "TitilliumWebRegular";
+  src: url("/fonts/TitilliumWeb-Regular.ttf") format("truetype");
+
+}
